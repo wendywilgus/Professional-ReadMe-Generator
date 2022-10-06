@@ -121,3 +121,11 @@ You are required to submit the following for review:
 ---
 
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+## Resources
+- ReadMe 
+	- https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide 
+	- https://www.makeareadme.com/
+	- https://dev.to/coderarchive/writing-a-high-quality-readme-1k3j
+- Badges: https://shields.io/
+- Inquirer.js https://www.npmjs.com/package/inquirer/v/8.2.4
