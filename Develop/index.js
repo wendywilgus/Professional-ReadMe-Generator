@@ -79,25 +79,18 @@ const questions = [
 
 //Function to write README file
 function writeToFile(fileName, data) {
-    const content = `# ${response.title}
-    ##### [$(response.username)] [Email] (${response.email})[Deployed Application]
-    
-    ##Table of Contents
-    * [Description](#Description)
-    * [Installation](#Install)
-    * [Usage](#Usage)
-    * [References](#References)
-    * [License](#License)
-    * [Contributors](#Contributors)
-    * [Testing](#Testing)
-    * [Questions](#Questions)`
+    fs.writeFile(fileName, data, (err) => {
+        if (err)
+            throw err;
+        console.log('Your README file has been created!');
+        });
 }
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(answers => {console.log(answers);
-        writeToFile();})
+        writeToFile("README.md", generateMarkdown);})
 }
 
 // Function call to initialize app
-init()
+init();
