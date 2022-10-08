@@ -1,19 +1,31 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if (license !== "Unlicensed") {
+    return `[![License](https://img.shields.io/badge/License-${license}-blue.svg)]`
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+    if (license !== "Unlicensed") {
+      return `(https://opensource.org/licenses/${license})`
+    }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license !== "Unlicensed") {
+    return 'This project is licensened under ${license}.'
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-    ## [Github Account] $(response.username) [Email] (${response.email})[Deployed Application] (${response.deployed})
+    ##[Deployed Application] (${response.deployed})
     
     ## Table of Contents
     * [Description](#Description)
@@ -27,23 +39,32 @@ function generateMarkdown(data) {
   ## Description:
   ${data.description}
 
-  ## Installation: 
+  ## Installation
+    _To properly install this application:_
   ${data.installation}
 
   ## Usage
+    _Please follow instructions for use:_
   ${data.usage}
 
   ## License
-  ${data.license}
+  ${renderLicenseBadge (data.license)}
+  ${renderLicenseSection (data.license)}
+  ${renderLicenseLink (data.license)}
 
   ## Contributors
+    _Guidelines for contributing:_
   ${data.contributors}
 
   ## Testing
+     _Guidelines for testing:_
   ${data.testing}
 
   ## Questions
-  ${data.questions}`;
+     _For futher questions: 
+  ${data.questions}; 
+   Github Account: [${data.username}] (https://github.com/${data.username})
+   Email: [${data.email}] (mailto:${data.email})`;
 };
 
 

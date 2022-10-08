@@ -76,12 +76,13 @@ const questions = [
      name: 'questions',
      message: 'How can people ask questions about this repo?',},
 ];
+//end of prompt questions array
 
 //Function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => {
-        if (err)
-            throw err;
+    fs.writeFile(fileName, data, error => {
+        if (error)
+            throw error;
         console.log('Your README file has been created!');
         });
 }
