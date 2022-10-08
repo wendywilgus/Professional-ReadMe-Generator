@@ -64,6 +64,10 @@ const questions = [
      }
     },
 
+    {type: 'input',
+     name: 'repo',
+     message: 'What is your Github repository name?',},
+
      {type: 'input',
      name: 'contributors',
      message: 'How can others contribute to this repo? Are there any rules that they need to abide by?',},
