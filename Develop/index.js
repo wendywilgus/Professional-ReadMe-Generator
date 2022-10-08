@@ -32,7 +32,7 @@ const questions = [
 
     {type: 'input',
      name: "description",
-     message: "Please describe yoru project. You may want to include the motivation, the goals or problems that it solves, what you learned, or why this project stands out.",
+     message: "Please describe your project. You may want to include the motivation, the goals or problems that it solves, what you learned, or why this project stands out.",
      validate: descriptionInput =>    {
         if (descriptionInput) {
             return true;
@@ -66,14 +66,14 @@ const questions = [
 
      {type: 'input',
      name: 'contributors',
-     message: 'How can others contribute to this repo? Are there any rule that they need to abide by?',},
+     message: 'How can others contribute to this repo? Are there any rules that they need to abide by?',},
 
      {type: 'input',
      name: 'testing',
      message: 'What commands should be run to do tests?',},
 
      {type: 'input',
-     name: 'questions',
+     name: 'question',
      message: 'How can people ask questions about this repo?',},
 ];
 //end of prompt questions array
@@ -89,9 +89,10 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions).then(answers => {console.log(answers);
-        writeToFile("README.md", generateMarkdown);})
-}
+    inquirer.prompt(questions)
+    .then((data) => 
+        writeToFile("README.md", generateMarkdown(data)));
+};
 
 // Function call to initialize app
 init();
