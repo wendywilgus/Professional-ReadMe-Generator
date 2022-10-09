@@ -1,5 +1,5 @@
-# lkdsjf
-  ##[Deployed Application] (lskjf)
+# Sample ReadMe
+  ##[Deployed Application] (https://wendywilgus.github.io/Weather-Dashboard/)
     
   ## Table of Contents
     - [Description](#Description)
@@ -11,15 +11,15 @@
     - [Questions](#Questions)
     
   ## Description:
-  skjdflk
+  Practice with generating a ReadMe. Testing the license
 
   ## Installation
     _To properly install this application:_
-  sljdf
+  npm init
 
   ## Usage
     _Please follow instructions for use:_
-  lskjd
+  for students
 
   ## License
     
@@ -27,14 +27,14 @@
 
   ## Contributors
     _Guidelines for contributing:_
-  kjsh
+  email me
 
   ## Testing
      _Guidelines for testing:_
-  ksj
+  none
 
   ## Questions
      _For futher questions: 
   undefined; 
-   Github Account: [lkdfj] (https://github.com/lkdfj)
-   Email: [lskdfj] (mailto:lskdfj)
+   Github Account: [wendywilgus] (https://github.com/wendywilgus)
+   Email: [wilguswendy@gmail.com] (mailto:wilguswendy@gmail.com)
