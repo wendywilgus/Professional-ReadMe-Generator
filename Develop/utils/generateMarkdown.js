@@ -64,34 +64,30 @@ function generateMarkdown(data) {
   (${data.deployed})
     
   ## Table of Contents
-  
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributors](#contributors)
-    - [Testing](#testing)
-    - [Questions](#questions)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
     
-  ## Description:
+  ## Description
   ${data.description}
 
   ## Installation
-    _To properly install this application:_
   ${data.installation}
 
   ## Usage
-    _Please follow instructions for use:_
   ${data.usage}
 
   ## License
   ${renderLicenseSection(data.license)}
 
-  ## Contributors
-    _Guidelines for contributing:_
+  ## Contributing
   ${data.contributors}
 
-  ## Testing
+  ## Tests
      _Guidelines for testing:_
   ${data.testing}
 
