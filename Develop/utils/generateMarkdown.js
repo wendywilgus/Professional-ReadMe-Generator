@@ -1,6 +1,9 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+// let license = `${answer.license}`;
+
 function renderLicenseBadge(license) {
+  console.log(license);
   if (license === "MIT") {
     return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
   }
@@ -52,17 +55,23 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-  ##[Deployed Application] (${data.deployed})
+  return `
+  
+  # ${data.title}
+
+  ${renderLicenseSection()}
+
+  ## Deployed Application 
+  (${data.deployed})
     
   ## Table of Contents
-    - [Description](#Description)
-    - [Installation](#Installation)
-    - [Usage](#Usage)
-    - [License](#License)
-    - [Contributors](#Contributors)
-    - [Testing](#Testing)
-    - [Questions](#Questions)
+    - [Description](#description)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contributors](#contributors)
+    - [Testing](#testing)
+    - [Questions](#questions)
     
   ## Description:
   ${data.description}
@@ -76,7 +85,8 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  ${renderLicenseSection()}
+  ${data.license}
+  
  
 
   ## Contributors
@@ -88,8 +98,7 @@ function generateMarkdown(data) {
   ${data.testing}
 
   ## Questions
-     _For futher questions: 
-  ${data.questions}; 
+     _For futher questions, please contact: 
    Github Account: [${data.username}] (https://github.com/${data.username})
    Email: [${data.email}] (mailto:${data.email})`;
 };

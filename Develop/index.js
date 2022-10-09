@@ -51,17 +51,16 @@ const questions = [
      name: 'usage',
      message: 'What is the repo for?  How can it be used?',},
 
-    {type: 'checkbox',
+    {type: 'list',
      name: 'license',
-     message: 'What license will you be using for this project?', choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3', 'Unlicensed',],
-     validate: licenseInput =>    {
-        if (licenseInput) {
-            return true;
-        } else  {
-            console.log('You must chose a license!');
-            return false;
-        }
-     }
+     message: 'What license will you be using for this project?',
+     choices: [
+        'MIT',
+        'GPLv2',
+        'Apache',
+        'GPLv3',
+        'Unlicensed',
+    ],
     },
 
     {type: 'input',
