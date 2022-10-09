@@ -1,9 +1,8 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-// let license = `${answer.license}`;
+let license = '';
 
 function renderLicenseBadge(license) {
-  console.log(license);
   if (license === "MIT") {
     return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
   }
@@ -28,22 +27,22 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === "MIT") {
-    return "https://opensource.org/licenses/MIT"
+    return "https://opensource.org/licenses/MIT";
   }
   else if (license === "GPLv2") {
-    return "https://opensource.org/licenses/GPL-2.0"
+    return "https://opensource.org/licenses/GPL-2.0";
   }
   else if (license === "Apache") {
-    return "https://opensource.org/licenses/Apache-2.0"
+    return "https://opensource.org/licenses/Apache-2.0";
   }
   else if (license === "GPLv3") {
-    return "https://opensource.org/licenses/GPL-3.0"
+    return "https://opensource.org/licenses/GPL-3.0";
   }
   else if (license === "Unlicensed") {
-    return "http://unlicense.org/"
+    return "http://unlicense.org/";
   }
   else {
-    return ""
+    return "";
   }
 }
 
@@ -59,7 +58,7 @@ function generateMarkdown(data) {
   
   # ${data.title}
 
-  ${renderLicenseSection()}
+  ${renderLicenseSection(data.license)}
 
   ## Deployed Application 
   (${data.deployed})

@@ -55,11 +55,26 @@ const questions = [
      name: 'license',
      message: 'What license will you be using for this project?',
      choices: [
-        'MIT',
-        'GPLv2',
-        'Apache',
-        'GPLv3',
-        'Unlicensed',
+       {
+        name: 'MIT',
+        value: 'MIT'
+       },
+       {
+        name: 'GPLv2',
+        value: 'GPLv2'
+       },
+       {
+        name: 'Apache',
+        value: 'Apache'
+       },
+       {
+        name: 'GPLv3',
+        value: 'GPLv3'
+       },
+       {
+        name: 'Unlicensed',
+        value: 'Unlicensed'
+       },
     ],
     },
 
