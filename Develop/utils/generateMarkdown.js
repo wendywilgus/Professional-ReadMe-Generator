@@ -58,12 +58,13 @@ function generateMarkdown(data) {
   
   # ${data.title}
 
-  ${renderLicenseSection(data.license)}
+  ${renderLicenseBadge(data.license)}
 
   ## Deployed Application 
   (${data.deployed})
     
   ## Table of Contents
+  
     - [Description](#description)
     - [Installation](#installation)
     - [Usage](#usage)
@@ -84,9 +85,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  ${data.license}
-  
- 
+  ${renderLicenseSection(data.license)}
 
   ## Contributors
     _Guidelines for contributing:_
