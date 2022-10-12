@@ -50,7 +50,7 @@ THEN I am taken to the corresponding section of the README
 
 ## Mock-Up
 
-Please watch a video of the functionality here: https://capture.dropbox.com/DQ1WTzcbryuCBLiB
+Please watch a video of the functionality here: https://watch.screencastify.com/v/8IK2BlceIwhbHQFfXVxy
 The following image shows the application's appearance and functionality when initiated in the terminal: 
 ![The application is displayed in the terminal with answers and message that README file has been created.](./TerminalUsage.png)
 
